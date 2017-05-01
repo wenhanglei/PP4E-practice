@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /.idea
+=======
+/.idea
+>>>>>>> deebffff9ce0e4f27683f00b679bac13bb5c4682
