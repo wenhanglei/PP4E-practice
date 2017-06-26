@@ -17,6 +17,7 @@ on Windows, / is generally allowed for file opens, but not by all launcher tools
 
 import sys, os
 pyfile = (sys.platform[:3] == 'win' and 'python.exe') or 'python'
+
 pypath = sys.executable
 
 def fixWindowsPath(cmdline):
