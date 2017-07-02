@@ -113,7 +113,7 @@ if __name__ == '__main__':
     client = eval('client' + sys.argv[1])
     multiprocessing.Process(target=server).start()
     client()
-    
+
 
 
 
