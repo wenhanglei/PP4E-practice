@@ -5,7 +5,9 @@
 """
 
 import smtplib, sys, email.utils, mailconfig
-mailserver = mailconfig.smtpservername
+mailserver = 'smtp.qq.com'
+user = '201*****61'
+passwd = 'hbptcdosniiafagc'
 
 From = input('From? ').strip()
 To   = input('To?   ').strip()
@@ -23,14 +25,16 @@ while True:
     text += line
 
 print('Connecting...')
-server = smtplib.SMTP(mailserver)
+server = smtplib.SMTP_SSL(mailserver)
+server.login(user, passwd)
 failed = server.sendmail(From, Tos, text)
 server.quit()
 if failed:
-    prnt('Failed recipients:', failed)
+    print('Failed recipients:', failed)
 else:
     print('No errors.')
 print('Bye')
+
 
 
 
