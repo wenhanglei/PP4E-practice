@@ -9,7 +9,7 @@ port = 80
 
 if len(sys.argv) > 1: webdir = sys.argv[1]
 if len(sys.argv) > 2: port = int(sys.argv[2])
-print('webdir "%S", port %s' % (webdir, port))
+print('webdir "%s", port %s' % (webdir, port))
 
 os.chdir(webdir)
 srvraddr = ('', port)
