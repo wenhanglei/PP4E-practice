@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGI 101</title>
+</head>
+<body>
+<H1>Common input devices: alternative layout</H1>
+<P>Use the same tutor5.py server side script, but change the
+layout of the form itself. Notice the separation of user interface
+and processing logic here; the CGI script is independent of the
+HTML used to interact with the user/client.</P><HR>
+<FORM method="POST" action="cgi-bin/tutor5.py">
+    <H3>Please complete the following form and click Submit</H3>
+    <p><TABLE border cellpadding="3">
+    <TR>
+        <TH align="right">Name:</TH>
+        <TD><input type="text" name="name"></TD>
+    </TR>
+    <TR>
+        <TH align="right">Shoe size:</TH>
+        <TD>
+            <input type="radio" name="shoesize" value="small">small
+            <input type="radio" name="shoesize" value="medium">Medium
+            <input type="raido" name="shoesize" value="large">Large
+        </TD>
+    </TR>
+    <TR>
+        <TH align="right">Occupation:</TH>
+        <TD>
+            <select name="job">
+                <option>Developer</option>
+                <option>Manager</option>
+                <option>Student</option>
+                <option>Evangelist</option>
+                <option>Other</option>
+            </select>
+        </TD>
+    </TR>
+    <TR>
+        <TH align="right">Political affiliations:</TH>
+        <TD><p><input type="checkbox" name="language" value="Python">Pythonista</p>
+        <p><input type="checkbox" name="language" value="Perl">Perlmonger</p>
+        <p><input type="checkbox" name="language" value="Tcl">Tcler</p>
+    </TD>
+    </TR>
+    <TR>
+        <TH align="right">Comments:</TH>
+        <TD><textarea name="comment" cols="30" rows="2">Enter spam here</textarea></TD>
+    </TR>
+    <TR>
+        <TD colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </TD>
+    </TR>
+</TABLE></p>
+</FORM>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
