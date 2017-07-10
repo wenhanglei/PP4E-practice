@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGI 101</title>
+</head>
+<body>
+<H1>Common input devices</H1>
+<HR>
+<FORM method="POST" action="cgi-bin/tutor5.py">
+    <H3>Please complete the following form and click Send</H3>
+    <P><TABLE>
+    <TR>
+        <TH align="right">Name:</TH>
+        <TD><input type="text" name="name"></TD>
+    </TR>
+    <TR>
+        <TH align="right">Shoe size:</TH>
+        <TD>
+            <table>
+                <td><input type="radio" name="shoesize" value="small">Small</td>
+                <td><input type="ridio" name="shoesize" value="medium">Medium</td>
+                <td><input type="radio" name="shoesize" value="large">Large</td>
+            </table>
+        </TD>
+    </TR>
+    <TR>
+        <TH align="right">Occupation:</TH>
+        <TD>
+            <select name="job">
+                <option>Developer</option>
+                <option>Manager</option>
+                <option>Student</option>
+                <option>Evangelist</option>
+                <option>Other</option>
+            </select>
+        </TD>
+    </TR>
+    <TR>
+        <TH align="right">Political affiliations:</TH>
+        <TD><table>
+            <td><input type="checkbox" name="language" value="Python">Pythonista</td>
+            <td><input type="checkbox" name="language" value="Perl">Perlmonger</td>
+            <td><input type="checkbox" name="language" value="Tcl">Tcler</td>
+        </table></TD>
+    </TR>
+    <TR>
+        <TH align="right">Comments:</TH>
+        <TD><textarea name="comment" cols="30" rows="2">Enter text here</textarea></TD>
+    </TR>
+    <TR>
+        <TD colspan="2" align="center">
+        <input type="submit" value="Send">
+    </TR>
+</TABLE>
+
+    </P>
+</FORM>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
