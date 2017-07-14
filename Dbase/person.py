@@ -7,7 +7,10 @@ class Person:
         self.pay = payy
 
     def tax(self):
-        return self.pay * 0.25
+        if attr =='tax':
+            return self.pay * 0.30
+        else:
+            raise AttributeError()
 
     def info(self):
         return self.name, self.job, self.pay, self.tax()
