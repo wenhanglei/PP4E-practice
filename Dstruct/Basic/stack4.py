@@ -29,7 +29,7 @@ class Stack:
 
     def __repr__(self):
         return '[Stack:%s]' % self.stack
-    
+
 
 
 
