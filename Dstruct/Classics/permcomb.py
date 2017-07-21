@@ -34,7 +34,7 @@ def combo(list, size):
             for x in combo(rest, size - 1):
                 result.append(pick + x)
         return result
-    
+
 
 
 
